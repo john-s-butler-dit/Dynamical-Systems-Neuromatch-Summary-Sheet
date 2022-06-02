@@ -1,4 +1,4 @@
-\begin{textbox}{\href{https://compneuro.neuromatch.io/tutorials/W2D2_LinearSystems/student/W2D2_Tutorial1.html}{Linear Systems (W2D2T1)} -  Linear Dynamical Systems}
+\begin{textbox}{\href{https://compneuro.neuromatch.io/tutorials/W2D2_LinearSystems/student/W2D2_Tutorial1.html}{Linear Dynamical Systems (W2D2T1)}   }
 \begin{subbox}{subbox}{One-dimensional Differential Equations}
 \scriptsize
 Differential equations are equations that express the \textbf{rate of change} of the state variable $x$. One typically describes this rate of change using the derivative of $x$ with respect to time ($dx/dt$) on the left hand side of the differential equation:
@@ -24,7 +24,7 @@ The solution of the differential equation $\dot{x} = a x$ using forward Euler in
 \end{textbox}
 %%%%%%%%%%%%%%%%%%%%%%%%% 
 %%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{textbox}{\href{https://compneuro.neuromatch.io/tutorials/W2D2_LinearSystems/student/W2D2_Tutorial1.html}{Linear Systems (W2D2T1)} -  Linear Dynamical Systems}
+\begin{textbox}{\href{https://compneuro.neuromatch.io/tutorials/W2D2_LinearSystems/student/W2D2_Tutorial1.html}{Linear Dynamical Systems (W2D2T1)} }
 \begin{subbox}{subbox}{Multi-Dimensional Dynamics}
 \scriptsize
 Adding one additional variable (or dimension) adds more variety of behaviors. Additional variables are useful in modeling the dynamics of more complex systems with richer behaviors, such as systems of multiple neurons. We can write such a system using two linear ordinary differential equations:
@@ -53,14 +53,14 @@ $$\mathbf{A}=
 \end{pmatrix}.
 $$
 \centering
-\includegraphics[scale=0.12]{Figures/LS/LSFigure2.png}
+\includegraphics[scale=0.14]{Figures/LS/LSFigure2.png}
 
 \end{subbox}
 
 \end{textbox}
 %%%%%%%%%%%%%%%%%%%%%%%%% 
 %%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{textbox}{\href{https://compneuro.neuromatch.io/tutorials/W2D2_LinearSystems/student/W2D2_Tutorial1.html}{Linear Systems (W2D2T1)} -  Linear Dynamical Systems}
+\begin{textbox}{\href{https://compneuro.neuromatch.io/tutorials/W2D2_LinearSystems/student/W2D2_Tutorial1.html}{Linear Dynamical Systems (W2D2T1)} }
 \begin{subbox}{subbox}{Stream Plots}
 \scriptsize
 It's a bit tedious to plot trajectories one initial condition at a time!
@@ -72,13 +72,13 @@ We can think of a initial condition ${\bf x}_0=(x_{1_0},x_{2_0})$  as coordinate
 Using some helper functions, we show the stream plots for each option of A that you examined in the earlier interactive demo. We included the eigenvectors of $\bf A$ as a red line (1st eigenvalue) and a blue line (2nd eigenvalue) in the stream plots.
 
 \centering
-\includegraphics[scale=0.12]{Figures/LS/LSFigure3.png}
+\includegraphics[scale=0.2]{Figures/LS/LSFigure3.png}
 \end{subbox}
 \end{textbox}
 %%%%%%%%%%%%%%%%%%%%%%%%% 
 %%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{textbox}{\href{https://colab.research.google.com/github/NeuromatchAcademy/course-content/blob/master/tutorials/W2D2_LinearSystems/student/W2D2_Tutorial2.ipynb}{Linear Systems (W2D2T2)} -  Markov Processes}
-\begin{subbox}{subbox}{\href{https://colab.research.google.com/github/NeuromatchAcademy/course-content/blob/master/tutorials/W2D2_LinearSystems/student/W2D2_Tutorial2.ipynb}{Linear Systems (W2D2T2)}  -  Introduction }
+\begin{textbox}{\href{https://colab.research.google.com/github/NeuromatchAcademy/course-content/blob/master/tutorials/W2D2_LinearSystems/student/W2D2_Tutorial2.ipynb}{Markov Processes (W2D2T2)}   }
+\begin{subbox}{subbox}{  Introduction }
 
 \scriptsize
 
@@ -90,7 +90,7 @@ This property that the present state entirely determines the transition to the n
 
 
 \end{subbox}
-\begin{subbox}{subbox}{\href{https://colab.research.google.com/github/NeuromatchAcademy/course-content/blob/master/tutorials/W2D2_LinearSystems/student/W2D2_Tutorial2.ipynb}{Linear Systems (W2D2T2)}  -  Telegraph Process}
+\begin{subbox}{subbox}{ Telegraph Process}
 
 \scriptsize
 
@@ -99,21 +99,17 @@ Let's consider a Markov process with two states, where switches between each two
 If the ion channel is Closed, it may transition to the Open state with probability $P(0 \rightarrow 1 | x = 0) = \mu_{c2o}$. Likewise, If the ion channel is Open, it transitions to Closed with probability $P(1 \rightarrow 0 | x=1) = \mu_{o2c}$.
 
 We simulate the process of changing states as a Poisson process. The Poisson process is a way to model discrete events where the average time between event occurrences is known but the exact time of some event is not known. Importantly, the Poisson process dictates the following points: 
-\begin{enumerate}
-    \item 
-The probability of some event occurring is independent from all other events.
-    \item 
- The average rate of events within a given time period is constant.
-    \item 
- Two events cannot occur at the same moment. Our ion channel can either be in an open or closed state, but not both simultaneously. 
-\end{enumerate}
 
-In the simulation below, we will use the Poisson process to model the state of our ion channel at all points $t$ within the total simulation time $T$. 
+1. The probability of some event occurring is independent from all other events.
 
-As we simulate the state change process, we also track at which times throughout the simulation the state makes a switch. We can use those times to measure the distribution of the time _intervals_ between state switches.
+2. The average rate of events within a given time period is constant.
+
+3. Two events cannot occur at the same moment. Our ion channel can either be in an open or closed state, but not both simultaneously. 
+
+In the plot below, we will use the Poisson process to model the state of our ion channel at all points $t$ within the total simulation time $T$. We also track at which times throughout the simulation the state makes a switch. 
 
 \centering
-\includegraphics[scale=0.14]{Figures/LS/MC_Figure1.png}
+\includegraphics[scale=0.25]{Figures/LS/MC_Figure1.png}
 
 \end{subbox}
 \end{textbox}
@@ -121,7 +117,7 @@ As we simulate the state change process, we also track at which times throughout
 %%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%% 
 %%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{textbox}{\href{https://colab.research.google.com/github/NeuromatchAcademy/course-content/blob/master/tutorials/W2D2_LinearSystems/student/W2D2_Tutorial2.ipynb}{Linear Systems (W2D2T2)} -  Markov Processes}
+\begin{textbox}{\href{https://colab.research.google.com/github/NeuromatchAcademy/course-content/blob/master/tutorials/W2D2_LinearSystems/student/W2D2_Tutorial2.ipynb}{Markov Processes (W2D2T2)} }
 \begin{subbox}{subbox}{Telegraph Process}
 \scriptsize
 
@@ -134,7 +130,7 @@ We now have \textit{switch times}, which is a list consisting of times when the 
 
 We generate a bar graph to visualize the distribution of the number of time-steps spent in each of the two possible system states during the simulation.
 \begin{center}
-\includegraphics[scale=0.2]{Figures/LS/MC_Figure3.png}
+\includegraphics[scale=0.25]{Figures/LS/MC_Figure3.png}
 \end{center}
 
 Even though the state is discrete --the ion channel can only be either Closed or Open--we can still look at the \textit{mean state} of the system, averaged over some window of time. 
@@ -144,13 +140,13 @@ Since we've coded Closed as $x=0$ and Open as $x=1$, conveniently, the mean of $
 Let's also take a look at the fraction of Open states as a cumulative mean of the state $x$. The cumulative mean tells us the average number of state-changes that the system will have undergone after a certain amount of time. 
 
 \begin{center}
-\includegraphics[scale=0.3]{Figures/LS/MC_Figure4.png}
+\includegraphics[scale=0.32]{Figures/LS/MC_Figure4.png}
 \end{center}
 \end{subbox}
 \end{textbox}
 %%%%%%%%%%%%%%%%%%%%%%%%% 
 %%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{textbox}{\href{https://colab.research.google.com/github/NeuromatchAcademy/course-content/blob/master/tutorials/W2D2_LinearSystems/student/W2D2_Tutorial2.ipynb}{Linear Systems (W2D2T2)} -  Markov Processes}
+\begin{textbox}{\href{https://colab.research.google.com/github/NeuromatchAcademy/course-content/blob/master/tutorials/W2D2_LinearSystems/student/W2D2_Tutorial2.ipynb}{Markov Processes (W2D2T2)} }
 \begin{subbox}{subbox}{Distributional Perspective}
 \scriptsize
 We can run a simulation many times and gather empirical distributions of open/closed states. Alternatively, we can formulate the exact same system probabilistically, keeping track of the probability of being in each state.
@@ -296,7 +292,7 @@ where $\eta$ is sampled from a standard normal distribution.
 For simplicity, we set $x_\infty = 0$. Let's plot a trajectory for this process again below. Take note of the parameters of the process because they will be important later.
 
 \begin{center}
-\includegraphics[scale=0.14]{Figures/LS/CDS_Figure8.png}
+\includegraphics[scale=0.16]{Figures/LS/CDS_Figure8.png}
 \end{center}
 What if we were given these positions $x$ as they evolve in time as data, how would we get back out the dynamics of the system $\lambda$? 
 
@@ -309,7 +305,7 @@ where $\eta$ is noise from a normal distribution, our approach is to solve for $
 As a check, let's plot every pair of points adjacent in time ($x_{k+1}$ vs. $x_k$) against each other to see if there is a linear relationship between them. 
 
 \begin{center}
-\includegraphics[scale=0.14]{Figures/LS/CDS_Figure9.png}
+\includegraphics[scale=0.16]{Figures/LS/CDS_Figure9.png}
 \end{center}
 
 
@@ -317,7 +313,7 @@ Hooray, it's a line! This is evidence that the dynamics that generated the data 
 
 This model is \textbf{autoregressive}, where auto means self. In other words, it's a regression of the time series on itself from the past. The equation as written above is only a function of itself from one step in the past, so we can call it a first order autoregressive model and plot.
 \begin{center}
-\includegraphics[scale=0.14]{Figures/LS/CDS_Figure10.png}
+\includegraphics[scale=0.16]{Figures/LS/CDS_Figure10.png}
 \end{center}
 
 \end{subbox}
@@ -342,7 +338,7 @@ In particular, we will explore a binary random sequence of 0's and 1's that woul
 
 The difference is that, instead of actually flipping a coin (or using code to generate such a sequence), you -- yes you, human -- are going to generate such a random Bernoulli sequence as best as you can by typing in 0's and 1's. We will then build higher-order AR models to see if we can identify predictable patterns in the time-history of digits you generate.
 \begin{center}
-\includegraphics[scale=0.25]{Figures/LS/CDS_Figure11.png}
+\includegraphics[scale=0.3]{Figures/LS/CDS_Figure11.png}
 \end{center}
 
 \end{subbox}
@@ -372,7 +368,7 @@ Additionally, output from our regression model is continuous (real numbers) wher
 Let's now try \textbf{AR models of different orders} systematically, and plot the test error of each.
 
 \begin{center}
-\includegraphics[scale=0.25]{Figures/LS/CDS_Figure13.png}
+\includegraphics[scale=0.3]{Figures/LS/CDS_Figure13.png}
 \end{center}
 
 

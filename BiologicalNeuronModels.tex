@@ -58,7 +58,7 @@ To mimic this, we will now investigate the neuronal response when the LIF neuron
 Note that the GWN has zero mean, that is, it describes only the fluctuations of the input received by a neuron. We can thus modify our definition of GWN to have a nonzero mean value $\mu$ that equals the DC input, since this is the average input into the cell. The cell below defines the modified gaussian white noise currents with nonzero mean $\mu$.
 
 \centering
-\includegraphics[scale=0.22]{Figures/BNM/LIF_Figure3.png}
+\includegraphics[scale=0.25]{Figures/BNM/LIF_Figure3.png}
 \end{subbox}
 \end{textbox}
 
@@ -77,7 +77,7 @@ Spike regularity can be quantified as the \textbf{coefficient of variation (CV) 
 A Poisson train is an example of high irregularity, in which $\textbf{CV}_{\textbf{ISI}} \textbf{= 1}$. And for a clocklike (regular) process we have $\textbf{CV}_{\textbf{ISI}} \textbf{= 0}$ because of \textbf{std(ISI)=0}.
 
 \centering
-\includegraphics[scale=0.08]{Figures/BNM/LIF_Figure4.png}
+\includegraphics[scale=0.09]{Figures/BNM/LIF_Figure4.png}
 \end{subbox}
 
 \begin{subbox}{subbox}{Summary 
@@ -162,7 +162,7 @@ where $\bar{I}_i$ is the sample mean, k is the time bin, and L is the length of 
 The \textit{sample correlation coefficient} may also be referred to as the \textit{sample Pearson correlation coefficient}. Here, is a beautiful paper that explains multiple ways to calculate and understand correlations \href{https://www.stat.berkeley.edu/~rabbee/correlation.pdf}{Rodgers and Nicewander 1988.}
 
 \centering
-\includegraphics[scale=0.08]{Figures/BNM/LIF_Figure5.png}
+\includegraphics[scale=0.1]{Figures/BNM/LIF_Figure5.png}
 \end{subbox}
 \begin{subbox}{subbox}{Measure the correlation between spike trains}
 \scriptsize
@@ -173,7 +173,7 @@ In order to find this, we need to bin the spike times and obtain two time series
 
 \begin{center}
     
-\includegraphics[scale=0.14]{Figures/BNM/LIF_Figure6.png}
+\includegraphics[scale=0.17]{Figures/BNM/LIF_Figure6.png}
 \end{center}
 
 \end{subbox}
@@ -190,7 +190,7 @@ The correlations transfer function appears to be linear. The input/output transf
 What would you expect to happen to the slope of the correlation transfer function if you vary the mean and/or the standard deviation of the GWN of the inputs ?
 \begin{center}
     
-\includegraphics[scale=0.14]{Figures/BNM/LIF_Figure8.png}
+\includegraphics[scale=0.25]{Figures/BNM/LIF_Figure8.png}
 \end{center}
 
 \end{subbox}
@@ -207,18 +207,6 @@ The mean and the variance of the synaptic current depends on the spike rate of a
 where $\lambda$ is the firing rate of the Poisson input, $J$ the amplitude of the postsynaptic current and $P(t)$ is the shape of the postsynaptic current as a function of time. 
 Therefore, when we varied $\mu$ and/or $\sigma$ of the GWN, we mimicked a change in the input firing rate. Note that, if we change the firing rate, both $\mu$ and $\sigma$ will change simultaneously, not independently. 
 Here, since we observe an effect of $\mu$ and $\sigma$ on correlation transfer, this implies that the input rate has an impact on the correlation transfer function.
-%\end{justify}
-
-%\end{flushleft}
-\end{subbox}
-\begin{subbox}{subbox}{
-References}
-\scriptsize
-
-
- De La Rocha, Jaime, et al. "Correlation between neural spike trains increases with firing rate." Nature (2007) (https://www.nature.com/articles/nature06028/)
-
-  Bujan AF, Aertsen A, Kumar A. Role of input correlations in shaping the variability and noise correlations of evoked activity in the neocortex. Journal of Neuroscience. 2015 Jun 3;35(22):8611-25. (https://www.jneurosci.org/content/35/22/8611)
 %\end{justify}
 
 %\end{flushleft}
