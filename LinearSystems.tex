@@ -1,4 +1,4 @@
-\begin{textbox}{\href{https://compneuro.neuromatch.io/tutorials/W2D2_LinearSystems/student/W2D2_Tutorial1.html}{Linear Dynamical Systems (W2D2T1)}   }
+\begin{textbox}{\href{https://compneuro.neuromatch.io/tutorials/W2D2_LinearSystems/student/W2D2_Tutorial1.html}{Linear Dynamical Systems }   }
 \begin{subbox}{subbox}{One-dimensional Differential Equations}
 \scriptsize
 Differential equations are equations that express the \textbf{rate of change} of the state variable $x$. One typically describes this rate of change using the derivative of $x$ with respect to time ($dx/dt$) on the left hand side of the differential equation:
@@ -9,7 +9,7 @@ A common notational short-hand is to write $\dot{x}$ for $\frac{dx}{dt}$. The do
 We can simulate an ordinary differential equation by approximating or modeling time as a discrete list of time steps $t_0, t_1, t_2, \dots$, such that $t_{i+1}=t_i+dt$. We can get the small change $dx$ over a small duration $dt$ of time from the definition of the differential:
 \begin{eqnarray}
   \dot x &=& \frac{dx}{dt} \\
-  dx     &=& \dot x\, dt  \\
+  dx     &=& \dot x\, dt  
 \end{eqnarray}
 So, at each time step $t_i$, we compute a value of $x$, $x(t_i)$, as the sum of the value of $x$ at the previous time step, $x(t_{i-1})$ and a small change $dx=\dot x\,dt$:
 
@@ -24,21 +24,21 @@ The solution of the differential equation $\dot{x} = a x$ using forward Euler in
 \end{textbox}
 %%%%%%%%%%%%%%%%%%%%%%%%% 
 %%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{textbox}{\href{https://compneuro.neuromatch.io/tutorials/W2D2_LinearSystems/student/W2D2_Tutorial1.html}{Linear Dynamical Systems (W2D2T1)} }
+\begin{textbox}{\href{https://compneuro.neuromatch.io/tutorials/W2D2_LinearSystems/student/W2D2_Tutorial1.html}{Linear Dynamical Systems } }
 \begin{subbox}{subbox}{Multi-Dimensional Dynamics}
 \scriptsize
 Adding one additional variable (or dimension) adds more variety of behaviors. Additional variables are useful in modeling the dynamics of more complex systems with richer behaviors, such as systems of multiple neurons. We can write such a system using two linear ordinary differential equations:
 
 \begin{eqnarray}
   \dot{x}_1 &=& {a}_{11} x_1 \\
-  \dot{x}_2 &=& {a}_{22} x_2 \\
+  \dot{x}_2 &=& {a}_{22} x_2 
 \end{eqnarray}
 
 So far, this system consists of two variables (e.g. neurons) in isolation. To make things interesting, we can add interaction terms:
 
 \begin{eqnarray}
   \dot{x}_1 &=& {a}_{11} x_1 + {a}_{12} x_2 \\
-  \dot{x}_2 &=& {a}_{21} x_1 + {a}_{22} x_2 \\
+  \dot{x}_2 &=& {a}_{21} x_1 + {a}_{22} x_2 
 \end{eqnarray}
 
 We can write the two equations that describe our system as one (vector-valued) linear ordinary differential equation:
@@ -60,7 +60,7 @@ $$
 \end{textbox}
 %%%%%%%%%%%%%%%%%%%%%%%%% 
 %%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{textbox}{\href{https://compneuro.neuromatch.io/tutorials/W2D2_LinearSystems/student/W2D2_Tutorial1.html}{Linear Dynamical Systems (W2D2T1)} }
+\begin{textbox}{\href{https://compneuro.neuromatch.io/tutorials/W2D2_LinearSystems/student/W2D2_Tutorial1.html}{Linear Dynamical Systems } }
 \begin{subbox}{subbox}{Stream Plots}
 \scriptsize
 It's a bit tedious to plot trajectories one initial condition at a time!
@@ -72,12 +72,12 @@ We can think of a initial condition ${\bf x}_0=(x_{1_0},x_{2_0})$  as coordinate
 Using some helper functions, we show the stream plots for each option of A that you examined in the earlier interactive demo. We included the eigenvectors of $\bf A$ as a red line (1st eigenvalue) and a blue line (2nd eigenvalue) in the stream plots.
 
 \centering
-\includegraphics[scale=0.2]{Figures/LS/LSFigure3.png}
+\includegraphics[scale=0.25]{Figures/LS/LSFigure3.png}
 \end{subbox}
 \end{textbox}
 %%%%%%%%%%%%%%%%%%%%%%%%% 
 %%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{textbox}{\href{https://colab.research.google.com/github/NeuromatchAcademy/course-content/blob/master/tutorials/W2D2_LinearSystems/student/W2D2_Tutorial2.ipynb}{Markov Processes (W2D2T2)}   }
+\begin{textbox}{\href{https://colab.research.google.com/github/NeuromatchAcademy/course-content/blob/master/tutorials/W2D2_LinearSystems/student/W2D2_Tutorial2.ipynb}{Markov Processes }   }
 \begin{subbox}{subbox}{  Introduction }
 
 \scriptsize
@@ -117,7 +117,7 @@ In the plot below, we will use the Poisson process to model the state of our ion
 %%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%% 
 %%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{textbox}{\href{https://colab.research.google.com/github/NeuromatchAcademy/course-content/blob/master/tutorials/W2D2_LinearSystems/student/W2D2_Tutorial2.ipynb}{Markov Processes (W2D2T2)} }
+\begin{textbox}{\href{https://colab.research.google.com/github/NeuromatchAcademy/course-content/blob/master/tutorials/W2D2_LinearSystems/student/W2D2_Tutorial2.ipynb}{Markov Processes } }
 \begin{subbox}{subbox}{Telegraph Process}
 \scriptsize
 
@@ -146,7 +146,7 @@ Let's also take a look at the fraction of Open states as a cumulative mean of th
 \end{textbox}
 %%%%%%%%%%%%%%%%%%%%%%%%% 
 %%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{textbox}{\href{https://colab.research.google.com/github/NeuromatchAcademy/course-content/blob/master/tutorials/W2D2_LinearSystems/student/W2D2_Tutorial2.ipynb}{Markov Processes (W2D2T2)} }
+\begin{textbox}{\href{https://colab.research.google.com/github/NeuromatchAcademy/course-content/blob/master/tutorials/W2D2_LinearSystems/student/W2D2_Tutorial2.ipynb}{Markov Processes } }
 \begin{subbox}{subbox}{Distributional Perspective}
 \scriptsize
 We can run a simulation many times and gather empirical distributions of open/closed states. Alternatively, we can formulate the exact same system probabilistically, keeping track of the probability of being in each state.
@@ -186,7 +186,7 @@ The eigenvalues of $\mathbf{A}$ tell us about the stability of the system, speci
 % Combining determinism and stochasticity
 %%%%%%%%%%%%%%%%%%%%%%%%% 
 %%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{textbox}{\href{https://compneuro.neuromatch.io/tutorials/W2D2_LinearSystems/student/W2D2_Tutorial3.html}{Combining Determinism and Stochasticity (W2D2T3)} }
+\begin{textbox}{\href{https://compneuro.neuromatch.io/tutorials/W2D2_LinearSystems/student/W2D2_Tutorial3.html}{Combining Determinism and Stochasticity } }
 \begin{subbox}{subbox}{Introduction}
 \scriptsize
 We've spent some time familiarizing ourselves with the behavior of such systems when their trajectories are (1) entirely predictable and deterministic, or (2) governed by random processes, it's time to consider that neither is sufficient to describe neuroscience. Instead, we are often faced with processes for which we know some dynamics, but there are some random aspects as well. We call these \textbf{dynamical systems with stochasticity}.
@@ -211,7 +211,7 @@ We will simulate this process below and plot the position of the bacterium as a 
 \end{textbox}
 %%%%%%%%%%%%%%%%%%%%%%%%% 
 %%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{textbox}{\href{https://compneuro.neuromatch.io/tutorials/W2D2_LinearSystems/student/W2D2_Tutorial3.html}{Combining Determinism and Stochasticity (W2D2T3)} }
+\begin{textbox}{\href{https://compneuro.neuromatch.io/tutorials/W2D2_LinearSystems/student/W2D2_Tutorial3.html}{Combining Determinism and Stochasticity } }
 
 \begin{subbox}{subbox}{Random Walks Simulations}
 \scriptsize
@@ -238,7 +238,7 @@ The plot of the mean and variance of our bacterium's random walk as a function o
 
 %%%%%%%%%%%%%%%%%%%%%%%%% 
 %%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{textbox}{\href{https://compneuro.neuromatch.io/tutorials/W2D2_LinearSystems/student/W2D2_Tutorial3.html}{Combining Determinism and Stochasticity (W2D2T3)} }
+\begin{textbox}{\href{https://compneuro.neuromatch.io/tutorials/W2D2_LinearSystems/student/W2D2_Tutorial3.html}{Combining Determinism and Stochasticity } }
 
 \begin{subbox}{subbox}{The Ornstein-Uhlenbeck (OU) process}
 \scriptsize
@@ -283,7 +283,7 @@ Notice that the value of this equilibrium variance depends on $\lambda$ and $\si
 %%% Autoregressive models
 %%%%%%%%%%%%%%%%%%%%%%%%% 
 %%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{textbox}{\href{https://compneuro.neuromatch.io/tutorials/W2D2_LinearSystems/student/W2D2_Tutorial4.html}{Autoregressive models (W2D2T4)} }
+\begin{textbox}{\href{https://compneuro.neuromatch.io/tutorials/W2D2_LinearSystems/student/W2D2_Tutorial4.html}{Autoregressive models } }
 \begin{subbox}{subbox}{Fitting data to the OU process}
 \scriptsize
  Our process  the drift-diffusion (OU) process had following form:
@@ -292,7 +292,7 @@ where $\eta$ is sampled from a standard normal distribution.
 For simplicity, we set $x_\infty = 0$. Let's plot a trajectory for this process again below. Take note of the parameters of the process because they will be important later.
 
 \begin{center}
-\includegraphics[scale=0.16]{Figures/LS/CDS_Figure8.png}
+\includegraphics[scale=0.25]{Figures/LS/CDS_Figure8.png}
 \end{center}
 What if we were given these positions $x$ as they evolve in time as data, how would we get back out the dynamics of the system $\lambda$? 
 
@@ -304,24 +304,19 @@ where $\eta$ is noise from a normal distribution, our approach is to solve for $
 
 As a check, let's plot every pair of points adjacent in time ($x_{k+1}$ vs. $x_k$) against each other to see if there is a linear relationship between them. 
 
-\begin{center}
-\includegraphics[scale=0.16]{Figures/LS/CDS_Figure9.png}
-\end{center}
-
-
 Hooray, it's a line! This is evidence that the dynamics that generated the data is linear. We can now reformulate this task as a regression problem.
-
-This model is \textbf{autoregressive}, where auto means self. In other words, it's a regression of the time series on itself from the past. The equation as written above is only a function of itself from one step in the past, so we can call it a first order autoregressive model and plot.
 \begin{center}
-\includegraphics[scale=0.16]{Figures/LS/CDS_Figure10.png}
+\includegraphics[scale=0.25]{Figures/LS/CDS_Figure10.png}
 \end{center}
+This model is \textbf{autoregressive}, where auto means self. In other words, it's a regression of the time series on itself from the past. The equation as written above is only a function of itself from one step in the past, so we can call it a first order autoregressive model and plot.
+
 
 \end{subbox}
 
 \end{textbox}
 %%%%%%%%%%%%%%%%%%%%%%%%% 
 %%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{textbox}{\href{https://compneuro.neuromatch.io/tutorials/W2D2_LinearSystems/student/W2D2_Tutorial4.html}{Autoregressive models (W2D2T4)} }
+\begin{textbox}{\href{https://compneuro.neuromatch.io/tutorials/W2D2_LinearSystems/student/W2D2_Tutorial4.html}{Autoregressive models } }
 \begin{subbox}{subbox}{Higher order autoregressive models}
 \scriptsize
 Now that we have established the autoregressive framework, generalizing for dependence on data points from the past is straightforward. \textbf{Higher order} autoregression models a future time point based on more than one point in the past.
@@ -338,7 +333,7 @@ In particular, we will explore a binary random sequence of 0's and 1's that woul
 
 The difference is that, instead of actually flipping a coin (or using code to generate such a sequence), you -- yes you, human -- are going to generate such a random Bernoulli sequence as best as you can by typing in 0's and 1's. We will then build higher-order AR models to see if we can identify predictable patterns in the time-history of digits you generate.
 \begin{center}
-\includegraphics[scale=0.3]{Figures/LS/CDS_Figure11.png}
+\includegraphics[scale=0.4]{Figures/LS/CDS_Figure11.png}
 \end{center}
 
 \end{subbox}
@@ -347,7 +342,7 @@ The difference is that, instead of actually flipping a coin (or using code to ge
 
 %%%%%%%%%%%%%%%%%%%%%%%%% 
 %%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{textbox}{\href{https://compneuro.neuromatch.io/tutorials/W2D2_LinearSystems/student/W2D2_Tutorial4.html}{Autoregressive models (W2D2T4)} }
+\begin{textbox}{\href{https://compneuro.neuromatch.io/tutorials/W2D2_LinearSystems/student/W2D2_Tutorial4.html}{Autoregressive models } }
 
 \begin{subbox}{subbox}{Understanding autoregressive parameters}
 \scriptsize
@@ -363,12 +358,12 @@ Fit a order-5 ($r=5$) AR model to the data vector $x$. We will then plot the obs
 
 Additionally, output from our regression model is continuous (real numbers) whereas our data are scalar (+1/-1). So, we will take the sign of our continuous outputs (+1 if positive and -1 if negative) as our predictions to make them comparable with data. Our error rate will simply be the number of mismatched predictions divided by the total number of predictions.
 \begin{center}
-\includegraphics[scale=0.1]{Figures/LS/CDS_Figure12.png}
+\includegraphics[scale=0.15]{Figures/LS/CDS_Figure12.png}
 \end{center}
 Let's now try \textbf{AR models of different orders} systematically, and plot the test error of each.
 
 \begin{center}
-\includegraphics[scale=0.3]{Figures/LS/CDS_Figure13.png}
+\includegraphics[scale=0.35]{Figures/LS/CDS_Figure13.png}
 \end{center}
 
 
