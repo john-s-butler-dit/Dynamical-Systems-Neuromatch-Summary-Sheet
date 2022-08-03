@@ -1,4 +1,3 @@
-# 
 # Latex Code for Neuromatch Dynamical Systems Summary Sheets
 
 This repository contains the latex code to generate the Dynamical Systems Summary Sheets for [Neuromatch Academy Computational Neuroscience Summer School 2022](https://compneuro.neuromatch.io/tutorials/intro.html)
